@@ -324,7 +324,7 @@
     }
 &emsp;&emsp;上面的代码解释的已经足够清楚了，但是本人有点懒，说实在的，代码、思路这东西我是在不愿看，所以我一般都是先看一遍，然后自己画张图，便于理解+记忆。
 
-![HashMap](http://raw.githubusercontent.com/MutualExclusion/solarcat/master/Java%E7%9B%B8%E5%85%B3/Java%E6%BA%90%E7%A0%81%E7%B3%BB%E5%88%97/HashMap.png)
+![HashMap](https://raw.githubusercontent.com/MutualExclusion/solarcat/master/img-folder/HashMap.png)
 
 &emsp;&emsp;现在，我们已经对HashMap有了较为深刻的认识了，赶紧为自己鼓鼓掌吧。
 
