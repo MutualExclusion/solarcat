@@ -15,9 +15,12 @@
 	-	[线程的基本操作](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/线程的状态转换以及基本操作.md#3-线程状态的基本操作)；
 	-	[守护线程Daemon](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/线程的状态转换以及基本操作.md#4守护线程daemon)；
 ### 并发理论（JMM）###
--	#### java内存模型以及happens-before规则 ####
+-	#### [java内存模型以及happens-before规则](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/java内存模型以及happens-before规则.md) ####
 	-	（1）JMM内存结构；
 	-	（2）重排序；
 	-	（3）happens-before规则
+### 并发关键字 ###
+-	#### []() ####
+	
 ## 深入理解JVM ##
 -	
