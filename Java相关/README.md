@@ -79,4 +79,4 @@
 	-	主要功能;
 	-	与synchronized阻塞唤醒相比具有的特色;
 ## 深入理解JVM ##
--	### [深入JVM总结图](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/深入理解Java虚拟机总结.md) ###
+-	### [深入JVM总结图](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/深入理解JVM/深入理解Java虚拟机总结.md) ###
