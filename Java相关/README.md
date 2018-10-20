@@ -10,17 +10,71 @@
 	-	[并发编程的缺点;](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/并发编程的优缺点.md#2-并发编程有哪些缺点)
 	-	[易混淆的概念;](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/并发编程的优缺点.md#3-应该了解的概念)
 -	#### 1.2 [线程的状态和基本操作](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/线程的状态转换以及基本操作.md) ####
-	-	[如何新建线程](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/线程的状态转换以及基本操作.md#1-新建线程)；
-	-	[线程状态的转换](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/线程的状态转换以及基本操作.md#2-线程状态转换)；
-	-	[线程的基本操作](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/线程的状态转换以及基本操作.md#3-线程状态的基本操作)；
-	-	[守护线程Daemon](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/线程的状态转换以及基本操作.md#4守护线程daemon)；
+	-	[如何新建线程;](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/线程的状态转换以及基本操作.md#1-新建线程)
+	-	[线程状态的转换;](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/线程的状态转换以及基本操作.md#2-线程状态转换)
+	-	[线程的基本操作;](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/线程的状态转换以及基本操作.md#3-线程状态的基本操作)
+	-	[守护线程Daemon;](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/线程的状态转换以及基本操作.md#4守护线程daemon)
 ### 并发理论（JMM）###
 -	#### [java内存模型以及happens-before规则](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/java内存模型以及happens-before规则.md) ####
-	-	（1）JMM内存结构；
-	-	（2）重排序；
-	-	（3）happens-before规则
+	-	[JMM内存结构;](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/java内存模型以及happens-before规则.md#2-内存模型抽象结构)
+	-	[重排序;](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/java内存模型以及happens-before规则.md#3-重排序)
+	-	[happens-before规则;](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/java内存模型以及happens-before规则.md#4-happens-before规则)
 ### 并发关键字 ###
--	#### []() ####
-	
+-	#### 3.1 让你彻底理解Synchronized ####
+	-	如何使用synchronized;
+	-	monitor机制;
+	-	synchronized的happens-before关系;
+	-	synchronized的内存语义;
+	-	锁优化;
+	-	锁升级策略;
+
+-	#### 3.2 让你彻底理解volatile ####
+	-	实现原理;
+	-	happens-before的关系推导;
+	-	内存语义;
+	-	内存语义的实现;
+
+-	#### 3.3 你以为你真的了解final吗？ ####
+	-	如何使用;
+	-	final的重排序规则;
+	-	final实现原理;
+	-	final引用不能从构造函数中“溢出”（this逃逸）;
+
+-	#### 3.4 三大性质总结：原子性，有序性，可见性 ####
+	-	原子性：synchronized;
+	-	可见性：synchronized，volatile;
+	-	有序性：synchronized，volatile;
+### Lock体系 ###
+-	#### 4.1 初识Lock与AbstractQueuedSynchronizer(AQS) ####
+	-	Lock和synchronized的比较;
+	-	AQS设计意图;
+	-	如何使用AQS实现自定义同步组件;
+	-	可重写的方法;
+	-	AQS提供的模板方法;
+
+-	#### 4.2 深入理解AbstractQueuedSynchronizer(AQS) ####
+	-	AQS同步队列的数据结构;
+	-	独占式锁;
+	-	共享式锁;
+-	#### 4.3 再一次理解ReentrantLock ####
+	-	重入锁的实现原理;
+	-	公平锁的实现原理;
+	-	非公平锁的实现原理;
+	-	公平锁和非公平锁的比较;
+-	#### 4.4 深入理解读写锁ReentrantReadWriteLock ####
+	-	如何表示读写状态;
+	-	WriteLock的获取和释放;
+	-	ReadLock的获取和释放;
+	-	锁降级策略;
+	-	生成Condition等待队列;
+	-	应用场景;
+
+4.5 详解Condition的await和signal等待/通知机制
+
+知识点：（1）与Object的wait/notify机制相比具有的特性；（2）与Object的wait/notify相对应的方法；（3）底层数据结构；（4）await实现原理；（5）signal/signalAll实现原理；（6）await和signal/signalAll的结合使用；
+
+4.6 LockSupport工具
+
+知识点：（1）主要功能；（2）与synchronized阻塞唤醒相比具有的特色；
 ## 深入理解JVM ##
 -	
