@@ -68,13 +68,15 @@
 	-	锁降级策略;
 	-	生成Condition等待队列;
 	-	应用场景;
-
-4.5 详解Condition的await和signal等待/通知机制
-
-知识点：（1）与Object的wait/notify机制相比具有的特性；（2）与Object的wait/notify相对应的方法；（3）底层数据结构；（4）await实现原理；（5）signal/signalAll实现原理；（6）await和signal/signalAll的结合使用；
-
-4.6 LockSupport工具
-
-知识点：（1）主要功能；（2）与synchronized阻塞唤醒相比具有的特色；
+-	#### 4.5详解Condition的await和signal等待/通知机制 ####
+	-	与Object的wait/notify机制相比具有的特性;
+	-	与Object的wait/notify相对应的方法;
+	-	底层数据结构;
+	-	await实现原理;
+	-	signal/signalAll实现原理;
+	-	await和signal/signalAll的结合使用;
+-	#### 4.6 LockSupport工具 ####
+	-	主要功能;
+	-	与synchronized阻塞唤醒相比具有的特色;
 ## 深入理解JVM ##
--	
+-	### [深入JVM总结图](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/深入理解Java虚拟机总结.md) ###
