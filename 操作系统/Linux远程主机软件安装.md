@@ -1,4 +1,4 @@
-# git #
+# Linux远程主机软件安装 #
 ## 1.安装git仓库在远程主机（Linux） ##
 ### 版本 ###
 CentOS6.5
@@ -26,3 +26,28 @@ CentOS6.5
 	# make prefix=/usr/local/git all
 	# make prefix=/usr/local/git install
 这步完成完成后基本上部署完毕，输入git --version可以查看git版本信息。
+### 至此 ###
+## 2.安装java在远程虚拟主机上 ##
+### 版本 ###
+系统版本：CentOS
+软件版本：java8
+#### 1.官网下载JDK ####
+#### 2.将下载的JDK解压缩 ####
+	# tar -zxvf jdk-8u191-linux-x64.tar.gz
+#### [【tar】命令详解]() ####
+#### 3.将JAVA HOME移动到/usr/local目录下 ####
+	# cp java1.8.0_191 /usr/local -c
+#### 4.修改配置文件 ####
+	# vim /etc/profile
+按i进入vim编辑模式，在文件末尾追加
+
+	JAVA_HOME=/usr/local/jdk1.8.0_191
+	CLASSPATH=$JAVA_HOME/lib/
+	PATH=$PATH:$JAVA_HOME/bin
+	export PATH JAVA_HOME CLASSPATH
+按esc退出，shift+zz保存退出。
+#### 5.重新加载资源文件 ####
+	# source /etc/profile
+#### 6.查看安装情况 ####
+	#java -version
+### 至此 ###
