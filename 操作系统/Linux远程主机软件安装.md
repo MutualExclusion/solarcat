@@ -1,7 +1,11 @@
 # Linux远程主机软件安装 #
+-	[1.安装git](1-安装git仓库在远程主机（Linux）)
+-	[2.安装jdk1.8](2-安装java在远程虚拟主机上)
+-	[3.安装maven](3-安装maven在远程虚拟主机上)
 ## 1.安装git仓库在远程主机（Linux） ##
 ### 版本 ###
 CentOS6.5
+### 步骤 ###
 #### 1.查看git是否已经安装在本机上 ####
 	# git --version
 安装了就会返回安装版本信息，没有安装就是命令没有发现（-bash: git: command not found）。
@@ -26,11 +30,13 @@ CentOS6.5
 	# make prefix=/usr/local/git all
 	# make prefix=/usr/local/git install
 这步完成完成后基本上部署完毕，输入git --version可以查看git版本信息。
-### 至此 ###
+### 至此 	*MutualExclusion 12/19/2018 8:12:44 PM* ###
+
 ## 2.安装java在远程虚拟主机上 ##
 ### 版本 ###
 系统版本：CentOS
 软件版本：java8
+### 步骤 ###
 #### 1.官网下载JDK ####
 #### 2.将下载的JDK解压缩 ####
 	# tar -zxvf jdk-8u191-linux-x64.tar.gz
@@ -50,4 +56,38 @@ CentOS6.5
 	# source /etc/profile
 #### 6.查看安装情况 ####
 	#java -version
-### 至此 ###
+### 至此 	*MutualExclusion 12/19/2018 8:15:58 PM* ###
+
+## 3.安装maven在远程虚拟主机上 ##
+### 版本 ###
+apache-maven-3.6.0<br>
+jdk1.8版本
+### 步骤 ###
+#### 1.解压缩 ####
+#### 2.将maven移动到/usr/local/maven3中 ####
+	mv apache-maven-3.6.0-bin.tar /usr/local/maven3
+#### 3.修改环境变量 ####
+在/etc/profile中添加以下几行
+
+	MAVEN_HOME=/usr/local/maven3
+	export MAVEN_HOME
+	export PATH=${PATH}:${MAVEN_HOME}/bin 
+
+重启加载环境source /etc/profile
+#### 验证 ####
+	mvn -version
+### 至此 	*MutualExclusion 12/19/2018 8:20:22 PM* ###
+
+## 4.安装mail邮件 ##
+### 版本 ###
+### 步骤 ###
+#### 直接安装 ####
+	yum -y intall mailx
+### 使用 ###
+### 报错：发送失败 ###
+	send-mail: warning: inet_protocols: IPv6 support is disabled: Address family not supported by protocol
+	send-mail: warning: inet_protocols: configuring for IPv4 support only
+	postdrop: warning: inet_protocols: IPv6 support is disabled: Address family not supported by protocol
+	postdrop: warning: inet_protocols: configuring for IPv4 support only
+待更新
+### 至此 *MutualExclusion 12/19/2018 8:52:58 PM * ###
