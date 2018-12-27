@@ -1,7 +1,7 @@
 # Linux远程主机软件安装 #
--	[1.安装git](1-安装git仓库在远程主机（Linux）)
--	[2.安装jdk1.8](2-安装java在远程虚拟主机上)
--	[3.安装maven](3-安装maven在远程虚拟主机上)
+-	[1.安装git](#1安装git仓库在远程主机Linux)
+-	[2.安装jdk1.8](#2安装java在远程虚拟主机上)
+-	[3.安装maven](#3安装maven在远程虚拟主机上)
 ## 1.安装git仓库在远程主机（Linux） ##
 ### 版本 ###
 CentOS6.5
@@ -90,4 +90,4 @@ jdk1.8版本
 	postdrop: warning: inet_protocols: IPv6 support is disabled: Address family not supported by protocol
 	postdrop: warning: inet_protocols: configuring for IPv4 support only
 待更新
-#### 至此	*MutualExclusion 12/19/2018 8:52:58 PM * ####
+#### 至此	*MutualExclusion 12/19/2018 8:52:58 PM* ####
