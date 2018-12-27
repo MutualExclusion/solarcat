@@ -1,8 +1,9 @@
-### 前言
+# JAVA源码系列--HashMap #
+## 前言 ##
 
 &emsp;&emsp;HashMap是Java最常用的集合之一，现今HashMap、Hashtable、ConcurrentHashMap三大集合已经成为面试常考的考点。这三个集合都是以key-value的键值对形式存储元素。除了三者之间的区别和联系。我们更要弄懂每个集合的存储方式、扩容机制、和并发处理。在Java中的源码是非常多的，两三千行代码不可能都记住，所以我们要深刻理解源代码，尽量不要死记硬背。1.8版本的HashMap实现了java.util.function包下的接口，是为新特性提供支持。此外1.8版本的另一个新特性就是HashMap的红黑树。下面直接我们来一起学习HashMap
 
-### 概述
+## 概述 ##
 
 -	HashMap是常用的Java集合之一，是基于哈希表的Map接口的实现。与HashTable主要区别为不支持同步和允许null作为key和value。
 
@@ -18,7 +19,7 @@
 
 -	原本Map.Entry接口的实现类Entry改名为了Node。转化为红黑树时改用另一种实现TreeNode
 
-### 1.8版本HashMap的重要属性
+### 1.8版本HashMap的重要属性 ###
 
 |1.8版本HashMap的重要属性|说明|
 |:-:|:-:|
@@ -35,7 +36,7 @@
 |int threshold;|HashMap的扩容阈值，在HashMap中存储的Node键值对超过这个数量时，自动扩容容量为原来的二倍|
 |final float loadFactor;|HashMap的负加载因子，可计算出当前table长度下的扩容阈值：threshold = loadFactor * table.length|
 
-### 1.8版本HashMap重要的方法
+### 1.8版本HashMap重要的方法 ###
 
 &emsp;&emsp;可以从上面的属性看出来HashMap的构建、扩容还有转化是一件相当麻烦的事情了，下面我们就从构造函数开始深入源码吧。  
 
@@ -394,3 +395,4 @@
     }
 
 &emsp;&emsp;以上代码大致就是按照HashMap这种特殊数组+链表+红黑树数据结构所设计的查找元素方式。HashMap的的重点在于其特殊的扩容机制、数据结构。我们在前面已经阐述的较为详细了。关于线程安全等一系列问题我在前面的概述中说的已经比较详细了，不在说了。
+#### 至此	*MutualExclusion 12/27/2018 6:05:48 PM* ####

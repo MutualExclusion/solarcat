@@ -30,7 +30,7 @@ CentOS6.5
 	# make prefix=/usr/local/git all
 	# make prefix=/usr/local/git install
 这步完成完成后基本上部署完毕，输入git --version可以查看git版本信息。
-### 至此 	*MutualExclusion 12/19/2018 8:12:44 PM* ###
+#### 至此 	*MutualExclusion 12/19/2018 8:12:44 PM* ####
 
 ## 2.安装java在远程虚拟主机上 ##
 ### 版本 ###
@@ -56,7 +56,7 @@ CentOS6.5
 	# source /etc/profile
 #### 6.查看安装情况 ####
 	#java -version
-### 至此 	*MutualExclusion 12/19/2018 8:15:58 PM* ###
+#### 至此 	*MutualExclusion 12/19/2018 8:15:58 PM* ####
 
 ## 3.安装maven在远程虚拟主机上 ##
 ### 版本 ###
@@ -76,7 +76,7 @@ jdk1.8版本
 重启加载环境source /etc/profile
 #### 验证 ####
 	mvn -version
-### 至此 	*MutualExclusion 12/19/2018 8:20:22 PM* ###
+#### 至此 	*MutualExclusion 12/19/2018 8:20:22 PM* ####
 
 ## 4.安装mail邮件 ##
 ### 版本 ###
@@ -90,4 +90,4 @@ jdk1.8版本
 	postdrop: warning: inet_protocols: IPv6 support is disabled: Address family not supported by protocol
 	postdrop: warning: inet_protocols: configuring for IPv4 support only
 待更新
-### 至此 *MutualExclusion 12/19/2018 8:52:58 PM * ###
+#### 至此	*MutualExclusion 12/19/2018 8:52:58 PM * ####
