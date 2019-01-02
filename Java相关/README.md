@@ -21,13 +21,11 @@
 	-	[重排序;](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/java内存模型以及happens-before规则.md#3-重排序)
 	-	[happens-before规则;](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/java内存模型以及happens-before规则.md#4-happens-before规则)
 ### 并发关键字 ###
--	#### 3.1 让你彻底理解Synchronized ####
-	-	如何使用synchronized;
-	-	monitor机制;
-	-	synchronized的happens-before关系;
-	-	synchronized的内存语义;
-	-	锁优化;
-	-	锁升级策略;
+-	#### 3.1 [让你彻底理解Synchronized](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/让你彻底理解Synchronized.md) ####
+	-	[如何使用synchronized](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/让你彻底理解Synchronized.md#2-synchronized实现原理);
+	-	[monitor机制](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/让你彻底理解Synchronized.md#21-对象锁monitor机制);
+	-	[synchronized的happens-before关系](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/让你彻底理解Synchronized.md22-synchronized的happens-before关系);
+	-	[synchronized的内存语义](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/让你彻底理解Synchronized.md#23-锁获取和锁释放的内存语义);
 
 -	#### 3.2 让你彻底理解volatile ####
 	-	实现原理;
