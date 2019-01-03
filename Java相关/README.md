@@ -2,6 +2,7 @@
 
 ## Java基础 ##
 -	[值传递和引用传递](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java基础知识点/Java基础知识点.md#值传递和引用传递)
+-	[fast-fail失败机制](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java基础知识点/Java基础知识点.md#fast-fail失败机制)
 ## Java源码系列 ##
 -	[JAVA源码系列--HashMap](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java源码系列/JAVA源码系列--HashMap.md "JAVA源码系列--HashMap")
 -	[JAVA源码系列--Hashtable](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java源码系列/JAVA源码系列--Hashtable.md "JAVA源码系列--Hashtable")
@@ -28,11 +29,11 @@
 	-	[synchronized的happens-before关系](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/让你彻底理解Synchronized.md#22-synchronized的happens-before关系);
 	-	[synchronized的内存语义](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/让你彻底理解Synchronized.md#23-锁获取和锁释放的内存语义);
 
--	#### 3.2 让你彻底理解volatile ####
-	-	实现原理;
-	-	happens-before的关系推导;
-	-	内存语义;
-	-	内存语义的实现;
+-	#### 3.2 [让你彻底理解volatile](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/让你彻底理解volatile.md) ####
+	-	[实现原理](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/让你彻底理解volatile.md#2-volatile实现原理);
+	-	[happens-before的关系推导](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/让你彻底理解volatile.md#3-volatile的happens-before关系);
+	-	[内存语义](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/让你彻底理解volatile.md#4-volatile的内存语义);
+	-	[内存语义的实现](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/让你彻底理解volatile.md#41-volatile的内存语义实现);
 
 -	#### 3.3 你以为你真的了解final吗？ ####
 	-	如何使用;
