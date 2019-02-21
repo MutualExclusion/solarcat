@@ -13,7 +13,7 @@
 
 -	【让你彻底理解volatile】[点击查看](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/README.md#32-让你彻底理解volatile) *1/3/2019 3:11:27 PM*
 -	【你以为你真的了解final吗？】[点击查看](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/README.md#33-你以为你真的了解final吗？) *1/12/2019 12:15:23 PM*
--	【三大性质总结：原子性，有序性，可见性】[点击查看](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/README.md#34-34-三大性质总结原子性有序性可见性) *2/21/2019 7:44:54 PM*
+-	【三大性质总结：原子性，有序性，可见性】[点击查看](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/README.md#34-三大性质总结原子性有序性可见性) *2/21/2019 7:44:54 PM*
 -	## 目录 ##
 
 -	###	Java相关 ###
