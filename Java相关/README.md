@@ -41,7 +41,7 @@
 	-	[final实现原理](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/你以为你真的了解final吗？.md#5-final的实现原理);
 	-	[final引用不能从构造函数中“溢出”（this逃逸）](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/你以为你真的了解final吗？.md#6-为什么final引用不能从构造函数中溢出);
 
--	#### 3.4 三大性质总结：原子性，有序性，可见性 ####
+-	#### 3.4 [三大性质总结：原子性，有序性，可见性](https://github.com/MutualExclusion/solarcat/blob/master/Java相关/Java并发系列/三大性质总结：原子性，有序性，可见性.md) ####
 	-	原子性：synchronized;
 	-	可见性：synchronized，volatile;
 	-	有序性：synchronized，volatile;
