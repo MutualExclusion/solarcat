@@ -27,7 +27,8 @@
 	-	[深入理解：高性能mysql]()
 	-	[常用关系型数据库和非关系型数据库]()
 -	### 数据结构与算法 ###
-	-	[八大排序算法]()
+	-	[八大排序算法](https://github.com/MutualExclusion/solarcat/blob/master/数据结构与算法/八大排序算法.md)
+	-	[算法]()
 -	###	设计模式 ###
 	-	[23种常用设计模式]()
 	-	[6大设计原则]()
@@ -43,10 +44,10 @@
 	-	[存储，虚拟内存，分页分段，内存调度算法]()
 	-	[文件系统]()
 	-	[死锁：原因，避免]()
-	-	[Linux基本操作命令]()
+	-	[Linux基本操作命令](https://github.com/MutualExclusion/solarcat/blob/master/操作系统/Linux基本操作命令.md)(更新模块)
 	-	[git]()
 -	### 计算机网络 ###
-	-	[网络分层]()
+	-	[网络分层](https://github.com/MutualExclusion/solarcat/blob/master/计算机网络/OSI七层+作用.md)
 	-	[网络层协议]()
 	-	[运输层协议]()
 	-	[应用层协议]()
